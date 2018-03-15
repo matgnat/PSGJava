@@ -11,7 +11,7 @@ public class TreeDrawingDown extends TreeDrawing {
         treeDrawing(this.treeHeight);
     }
 
-    public void treeDrawing(int treeHeight) {
+    private void treeDrawing(int treeHeight) {
         for (int level = 0; level < treeHeight; level++) {
             for (int countSpace = 0; countSpace < level + 1; countSpace++)
                 System.out.print(" ");

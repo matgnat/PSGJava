@@ -12,24 +12,30 @@ public class Validator extends CreateTreeApp {
     public boolean isNumberFlag = false;
     public boolean isDirectionFlag = false;
 
-    public void validateTreeHeight(Scanner scanner) {
+    public int validateTreeHeight(Scanner scanner) {
+        int positiveInt = 0;
+        System.out.println("Insert height tree: ");
         do {
             if (scanner.hasNextInt()) {
-                isNumberFlag = true;
+                positiveInt = scanner.nextInt();
+                if (positiveInt > 0) {
+                    isNumberFlag = true;
+                } else {
+                    System.out.println(":) Try again!");
+                    scanner.nextLine();
+                }
             }
-            //TODO
-            /*else if (scanner.nextLine().isEmpty() || scanner.nextLine().length() == 0) {
-                System.out.println("Cannot be empty, you must insert a digit! ");
-                //scanner.next();
-            }*/
             else {
-                System.out.println("You must insert a digit! ");
-                scanner.next();
+                System.out.println("You must insert a positive digit, max is 2147483647! ");
+                scanner.nextLine();
             }
 
 
         } while (!(isNumberFlag));
+
+        return positiveInt;
     }
+
 
 
     public void validateDirection(Scanner scanner) {
@@ -40,7 +46,8 @@ public class Validator extends CreateTreeApp {
             //TODO
             /*else if (scanner.next("^null|$")) {
                 System.out.println("Empty line");
-            }*/ else {
+            }*/
+            else {
                 System.out.println("You must insert direction: \nL for Left\nR for Right\nU for Up\nD for Down");
                 scanner.next();
             }

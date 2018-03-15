@@ -10,7 +10,7 @@ public class TreeDrawingLeft extends TreeDrawing {
         treeDrawing(this.treeHeight);
     }
 
-    public void treeDrawing(int treeHeight) {
+    private void treeDrawing(int treeHeight) {
         for (int level = 0; level < treeHeight; level++) {
             for (int countSpace = 0; countSpace < treeHeight - level; countSpace++)
                 System.out.print(" ");

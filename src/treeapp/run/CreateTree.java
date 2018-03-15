@@ -28,14 +28,12 @@ public class CreateTree {
         Scanner scanner = new Scanner(System.in);
         Validator validator = new Validator();
 
-        System.out.println("Insert height tree: ");
 
-        //validate input height value, must be int
-        validator.validateTreeHeight(scanner);
-        inputTreeHeight = scanner.nextInt();
+
+        inputTreeHeight = validator.validateTreeHeight(scanner);
 
         System.out.println("Insert direction: \nL for Left\nR for Right\nU for Up\nD for Down");
-        //validate input height value, must be String from scope [UDLR]
+
         validator.validateDirection(scanner);
         inputDirection = scanner.next();
         inputDirection = inputDirection.toUpperCase();

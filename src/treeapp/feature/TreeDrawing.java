@@ -6,6 +6,8 @@ package treeapp.feature;
 public abstract class TreeDrawing {
 
     public int treeHeight;
-    public abstract void treeDrawing(int treeHeight);
+    private void treeDrawing(int treeHeight) {
+        System.out.println("Draw");
+    }
 
 }
