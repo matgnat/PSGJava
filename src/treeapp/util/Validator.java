@@ -1,6 +1,6 @@
-package treeApp.util;
+package treeapp.util;
 
-import treeApp.run.CreateTreeApp;
+import treeapp.run.CreateTreeApp;
 
 import java.util.Scanner;
 

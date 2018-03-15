@@ -1,13 +1,13 @@
-package treeApp.run;
+package treeapp.run;
 
 
-import treeApp.feature.*;
-import treeApp.util.Direction;
-import treeApp.util.Validator;
+import treeapp.feature.*;
+import treeapp.util.Direction;
+import treeapp.util.Validator;
 
 import java.util.Scanner;
 
-import static treeApp.util.Direction.valueOf;
+import static treeapp.util.Direction.valueOf;
 
 /**
  * Created by magn on 3/14/2018.

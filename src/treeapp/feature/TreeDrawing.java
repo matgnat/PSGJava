@@ -1,4 +1,4 @@
-package treeApp.feature;
+package treeapp.feature;
 
 /**
  * Created by magn on 3/12/2018.

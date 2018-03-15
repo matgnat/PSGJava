@@ -1,4 +1,4 @@
-package treeApp.run;
+package treeapp.run;
 
 /**
  * Created by magn on 3/12/2018.

@@ -1,4 +1,4 @@
-package treeApp.util;
+package treeapp.util;
 
 /**
  * Created by magn on 3/12/2018.
