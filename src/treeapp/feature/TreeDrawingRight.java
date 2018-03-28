@@ -7,8 +7,8 @@ public class TreeDrawingRight extends TreeDrawing {
 
 
     public TreeDrawingRight(int treeHeight) {
-        this.treeHeight = treeHeight;
-        treeDrawing(this.treeHeight);
+        setTreeHeight(treeHeight);
+        treeDrawing(getTreeHeight());
     }
 
     private void treeDrawing(int treeHeight) {

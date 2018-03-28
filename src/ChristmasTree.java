@@ -20,6 +20,10 @@ public class ChristmasTree {
         }
         System.out.println(l);
 
+        Collections.sort(l,Collections.reverseOrder());
+
+        System.out.println(l);
+
         Iterator<Integer> iterator = l.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
@@ -63,6 +67,9 @@ public class ChristmasTree {
             String k = entries.getValue();
             System.out.println(h + " --> " + k);
         }
+
+        //ChristmasTree tree = new ChristmasTree();
+
 
     }
 

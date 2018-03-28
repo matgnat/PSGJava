@@ -22,12 +22,9 @@ public class CreateTree {
         directionOfCreateTree();
     }
 
-
-
     public void inputTreeValue() {
         Scanner scanner = new Scanner(System.in);
         Validator validator = new Validator();
-
 
 
         inputTreeHeight = validator.validateTreeHeight(scanner);

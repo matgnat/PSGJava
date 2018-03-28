@@ -5,9 +5,16 @@ package treeapp.feature;
  */
 public abstract class TreeDrawing {
 
-    public int treeHeight;
+    private int treeHeight;
     private void treeDrawing(int treeHeight) {
         System.out.println("Draw");
     }
 
+    public int getTreeHeight() {
+        return treeHeight;
+    }
+
+    public void setTreeHeight(int treeHeight) {
+        this.treeHeight = treeHeight;
+    }
 }

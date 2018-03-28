@@ -6,8 +6,8 @@ package treeapp.feature;
 public class TreeDrawingUp extends TreeDrawing {
 
     public TreeDrawingUp(int treeHeight) {
-        this.treeHeight = treeHeight;
-        treeDrawing(this.treeHeight);
+        setTreeHeight(treeHeight);
+        treeDrawing(getTreeHeight());
     }
 
     private void treeDrawing(int treeHeight) {
